@@ -102,14 +102,11 @@ def hybrid_recommend(user_id, top_n=5):
 ##  **Evaluation Metrics & Results**  
 The models were evaluated using:  
 
-1. **Root Mean Squared Error (RMSE)** – Measures prediction accuracy.  
-2. **Precision & Recall** – Evaluates recommendation relevance.  
-3.  **Diversity Score** – Ensures recommendations are varied.  
+1. **Root Mean Squared Error (RMSE):** Measures prediction accuracy.  
+2. **Precision & Recall:** Evaluates recommendation relevance.  
+3.  **Diversity Score:** Ensures recommendations are varied.  
 
 ### **Results Summary**  
 - **CF (SVD) Model:** RMSE = 0.85, Precision = 78%  
 - **CBF Model:** Precision = 74%, Recall = 68%  
 - **Hybrid Model:** Precision = **82%**, Recall = **75%**  
-
- 6. Optimize data types (int32 instead of int64) for efficiency.  
- 7. Merge events + item properties + category tree datasets.  
